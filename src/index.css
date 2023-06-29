@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.none {
+  display: none;
+}
+.chon {
+  border: 3px solid palevioletred;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  align-items: center;
+  margin: 0 auto;
+}
+.model {
+  width: 500px;
+  position: relative;
+}
+.model img {
+  width: 100%;
+}
+.model .kinh {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.model .nen {
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  background-color: rgba(202, 107, 18, 0.3);
+  text-align: center;
+}
+.model .nen h2{
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.model .nen #price {
+  margin: 10px 0;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+.main .glasses {
+  width: 50%;
+}
+.main .glasses .item {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main .glasses .item img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .main {
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .model {
+    width: 400px;
+    position: relative;
+  }
+  .main .glasses {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .model .glasses {
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 854px) and (max-width: 900px) {
+  .model .kinh {
+    position: absolute;
+    top: 142px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 992px) {
+  .model .kinh {
+    position: absolute;
+    top: 147px;
+  }
+}
